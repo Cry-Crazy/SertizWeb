@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato-regular' ;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato-light' ;
+    src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato-bold' ;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+
+html, body{
+    font-size: 20px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* работа с тексом*/
+
+h1, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+}
+
+.title-name{
+    font-family: 'Montserrat-bold';
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.9rem;
+
+    color: #333333;
+}
+.title-descript{
+    font-family: 'Lato-regular';
+    font-size: 0.9rem;
+    text-align: center;
+
+    color: #4D4943;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+.orange{
+    color: #F1AD1D;
+}
+
+.title{
+    font-family: 'Montserrat-bold';
+}
+
+.p_under_title{
+    font-family: 'Lato-regular';
+}
+.line{
+    border-bottom: 3px solid #F1AD1D;
+    width: 3rem;
+
+}
+h2{
+    margin: 0px;
+}
+ /* навигация по сайту, по скольку она будет на всех страничках */
+.header-nav{
+    
+    border-bottom: 2px #F1AD1D solid ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    margin-bottom: 1rem;
+
+    transition: 0.5s;
+    overflow: hidden;
+}
+.second-nav{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    transform: scaleX(1) ;
+    transform-origin: left center;
+}
+.page-link{
+    display: inline-block;
+    color: #3D3D3D;
+    font-family: 'Lato-regular';
+    font-size: 1rem;
+    margin-left: 40px;
+}
+.page-link:hover{
+    color: #F1AD1D;
+}
+.page1{
+    font-family: 'Montserrat-bold';
+    text-transform: uppercase;
+    color: #F1AD1D;
+    font-size: 1.5rem;
+
+}
+.page1_active .second-nav{
+    transform-origin: left center ;
+    transform: scaleX(0);
+}
